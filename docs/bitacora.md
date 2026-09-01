@@ -1,59 +1,56 @@
-Aquí tienes la **bitácora actualizada**, Ernesto — completamente alineada con el proceso real que llevamos, sin adelantarnos a arquitectura, infraestructura ni decisiones técnicas. Está lista para **copiar y pegar** en:
+# Bitácora del Paso‑1: Definición del Proceso AxolPass
 
-```
-/docs/process/bitacora-inicial.md
-```
-
-Incluye Guided Links para continuar con el Paso‑1.
+## Objetivo
+Registrar de manera cronológica y estructurada todas las actividades realizadas durante el **Paso‑1**, cuyo propósito es definir el proceso base del proyecto AxolPass antes de iniciar cualquier análisis de dominio, diseño técnico o implementación.
 
 ---
 
-# 🗂️ Bitácora Inicial del Proyecto AxolPass  
-**Fecha:** 31 de agosto de 2026  
-**Responsable:** Ernesto  
-**Ubicación:** Zapopan, Jalisco, México  
+# 🧭 Resumen del Paso‑1
+
+El Paso‑1 establece:
+
+- cómo se organiza el repositorio  
+- cómo se organiza la documentación  
+- cómo se nombran las cosas  
+- cómo se mide el servicio  
+- qué herramientas se utilizan  
+- qué principios guían el trabajo  
+
+Este paso define **el marco operativo del proyecto**, sin incluir decisiones técnicas, arquitectónicas o de implementación.
 
 ---
 
-## 🧱 1. Creación del repositorio AxolPass en GitHub  
-- Se creó el repositorio remoto llamado **AxolPass** en GitHub.  
-- El repositorio quedó vacío inicialmente, con solo la rama `main`.
+# 📘 Actividades Realizadas
 
-**Acción registrada:**  
-Creación del repositorio base para alojar el monorepo del proyecto AxolPass.
+## 1. Creación del repositorio AxolPass  
+Se creó el repositorio remoto **AxolPass** en GitHub, iniciando con la rama `main`.
 
 ---
 
-## 🧲 2. Clonación del repositorio en entorno local  
-Se ejecutó:
+## 2. Clonación del repositorio  
+Se clonó el repositorio en el entorno local:
 
 ```
 git clone https://github.com/axolote-solutions/AxolPass.git
 cd AxolPass
 ```
 
-**Resultado:**  
-- Se obtuvo una copia local del repositorio.  
-- Se estableció la conexión con `origin`.
-
 ---
 
-## 🌿 3. Creación de la rama `develop`  
-Desde la copia local se creó la rama de integración continua:
+## 3. Creación de la rama `develop`  
+Se creó la rama de integración continua:
 
 ```
 git checkout -b develop
 git push -u origin develop
 ```
 
-**Resultado:**  
-- La rama `develop` quedó creada localmente y en GitHub.  
-- GitHub sugirió un Pull Request hacia `main`, pero se descartó porque **GitFlow** requiere que `develop` exista sin fusionarse a `main` en esta etapa.
+GitHub sugirió un Pull Request hacia `main`, pero se descartó conforme a GitFlow.
 
 ---
 
-## 🧭 4. Definición del flujo de ramas  
-Se estableció el flujo de trabajo basado en GitFlow:
+## 4. Definición del flujo de ramas  
+Se estableció el flujo basado en GitFlow:
 
 ```
 main
@@ -64,70 +61,57 @@ main
       └── chore/<nombre>
 ```
 
-**Resultado:**  
-- Se definió que toda documentación inicial se trabajará en ramas `docs/*` derivadas de `develop`.
+---
+
+## 5. Creación del archivo `.gitignore`  
+Se agregó un `.gitignore` estándar para un monorepo Java/Spring Boot, asegurando limpieza y control de artefactos no deseados.
 
 ---
 
-## 📄 5. Creación del archivo `.gitignore`  
-Se agregó un archivo `.gitignore` completo y estándar para un monorepo Java/Spring Boot:
-
-```
-git add .gitignore
-git commit -m "Add initial .gitignore"
-git push
-```
-
-**Resultado:**  
-- El repositorio ahora ignora archivos temporales, binarios, logs, configuraciones de IDE, dependencias, secretos y otros elementos no deseados.  
-- Se estableció una base técnica limpia para el proyecto.
-
----
-
-## 🌱 6. Creación de la rama `docs/paso-1`  
-Para comenzar la documentación del proceso:
+## 6. Creación de la rama `docs/paso-1`  
+Se creó la rama donde se documenta el proceso del Paso‑1:
 
 ```
 git checkout develop
 git checkout -b docs/paso-1
 ```
 
-**Resultado:**  
-- Se creó la rama donde se documentará el **Paso -1** del proceso AxolPass.
-
 ---
 
-## 📁 7. Creación del directorio `docs/process`  
-Dentro de la rama `docs/paso-1` se creó la estructura inicial de documentación:
+## 7. Creación del directorio `docs/process`  
+Se creó la estructura inicial de documentación:
 
 ```
 mkdir -p docs/process
 ```
 
-**Resultado:**  
-- Se estableció el directorio donde vivirán los documentos del proceso, incluyendo:  
-  - `repository-structure.md`  
-  - `documentation-structure.md`  
-  - `naming-conventions.md`  
-  - `sla-slo-sli.md`  
-  - `tooling.md`  
-  - `principles.md`  
+---
+
+## 8. Creación de los documentos del proceso  
+Se generaron los siguientes documentos:
+
+- **repository-structure.md**  
+- **documentation-structure.md**  
+- **naming-conventions.md**  
+- **sla-slo-sli.md**  
+- **tooling.md**  
+- **principles.md**  
+
+Cada documento fue creado siguiendo los principios de claridad, neutralidad tecnológica y trazabilidad.
 
 ---
 
-## 📌 Estado actual del proyecto
+# 📌 Estado Final del Paso‑1
 
-- Repositorio AxolPass creado y clonado.  
-- Ramas `main` y `develop` listas.  
-- `.gitignore` configurado.  
-- Rama `docs/paso-1` creada para documentación inicial.  
-- Directorio `docs/process` creado.  
-- Documentos del Paso‑1 en proceso de creación.
+El Paso‑1 queda oficialmente **completado** con:
 
----
+- Monorepo estructurado  
+- Documentación organizada  
+- Convenciones de nombres definidas  
+- Parámetros operativos iniciales establecidos  
+- Herramientas del proceso documentadas  
+- Principios del proyecto formalizados  
+- Bitácora del Paso‑1 registrada  
 
-## 🔗 Próximos pasos sugeridos
+El proyecto está listo para avanzar hacia la siguiente etapa.
 
-- Crear **tooling.md**  
-- Crear **principles.md**  
-- Finalizar el Paso‑1 y preparar la transición hacia el análisis de dominio.
