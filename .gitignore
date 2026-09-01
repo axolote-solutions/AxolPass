@@ -1,0 +1,98 @@
+# ============================================
+# AxolPass - Monorepo .gitignore
+# Java / Spring Boot / Maven / Gradle / IDEs
+# ============================================
+
+# --- Java ---
+*.class
+*.jar
+*.war
+*.ear
+*.jpi
+
+# --- Maven ---
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# --- Gradle ---
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# --- Spring Boot ---
+*.log
+*.tmp
+*.out
+
+# --- Logs ---
+logs/
+*.log
+*.log.*
+*.out
+*.err
+
+# --- IDEs ---
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# --- Docker ---
+docker-compose.override.yml
+*.pid
+
+# --- Kubernetes ---
+*.yaml.tmp
+*.yml.tmp
+
+# --- Node / Frontend (por si se agrega más adelante) ---
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+dist/
+build/
+
+# --- Python (por si se agregan scripts) ---
+__pycache__/
+*.pyc
+
+# --- Terraform (si se usa en /infrastructure) ---
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+*.tfvars
+
+# --- Secrets (nunca deben estar en el repo) ---
+*.env
+.env.*
+secrets/
+secret.yaml
+secret.yml
+
+# --- Misc ---
+*.bak
+*.old
+*.orig
+
