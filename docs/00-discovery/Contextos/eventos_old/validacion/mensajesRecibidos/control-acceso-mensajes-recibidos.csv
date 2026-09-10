@@ -1,0 +1,26 @@
+﻿Mensaje,Tipo,Caso de uso Receptor,Caso de uso Emisor
+GenerateInvitationCommand,Command,UC-ACC-01: Generar Invitación de Acceso,PENDIENTE
+CancelInvitationCommand,Command,UC-ACC-02: Cancelar Invitación,PENDIENTE
+UpdateInvitationContactCommand,Command,UC-ACC-14: Actualizar Contacto de Invitación,PENDIENTE
+RequestInvitationResendCommand,Command,UC-ACC-15: Solicitar Reenvío de Invitación,PENDIENTE
+GetActiveInvitationsQuery,Query,UC-ACC-16: Consultar Mis Invitaciones Activas,PENDIENTE
+GetInvitationDetailQuery,Query,UC-ACC-17: Consultar Detalle de Invitación,PENDIENTE
+GetInvitationHistoryQuery,Query,UC-ACC-18: Consultar Historial de Invitaciones,PENDIENTE
+RegisterOnlineEntryCommand,Command,UC-ACC-03: Registrar Entrada Online,PENDIENTE
+GetValidTokensForTodayQuery,Query,UC-ACC-04: Sincronizar Caché Offline,PENDIENTE
+SyncDeferredAccessesCommand,Command,UC-ACC-05: Procesar Eventos Diferidos,PENDIENTE
+RegisterUnscheduledVisitCommand,Command,UC-ACC-06: Registrar Llegada Sorpresa,PENDIENTE
+TriggerEmergencyOverrideCommand,Command,UC-ACC-07: Ejecutar Apertura de Contingencia,PENDIENTE
+RegisterManualDepartureCommand,Command,UC-ACC-20: Registrar Salida Manual desde Consola,PENDIENTE
+ResolveEmergencyOverrideCommand,Command,UC-ACC-12: Justificar Contingencia Pendiente,PENDIENTE
+RegisterDepartureCommand,Command,UC-ACC-08: Registrar Salida de Visitante,PENDIENTE
+ExpirePendingInvitationsCommand,Command,UC-ACC-09: Invalidar Invitaciones Expiradas,PENDIENTE
+RegisterOfflineDepartureCommand,Command,UC-ACC-10: Registrar Salida Offline,PENDIENTE
+ValidateOfflineTokenCommand,Command,UC-ACC-11: Validar Acceso Offline,PENDIENTE
+SendHeartbeatCommand,Command,UC-ACC-13: Sincronizar Estado Operativo Global,PENDIENTE
+CommunitySettingsUpdatedEvent,Event,UC-ACC-19: Inicializar Entorno de Caseta,UC-COM-01: Configurar Reglas de Comunidad
+InitializeAccessEnvironmentCommand,Command,UC-ACC-19: Inicializar Entorno de Caseta,CommunitySettingsUpdatedEvent / UC-COM-01: Configurar Reglas de Comunidad
+HouseOperationalStatusChangedEvent,Event,UC-ACC-21: Reaccionar a Suspensión de Unidad,UC-COM-07: Modificar Estado Operativo de Unidad Privativa
+SyncHouseSuspensionCommand,Command,UC-ACC-21: Reaccionar a Suspensión de Unidad,HouseOperationalStatusChangedEvent / UC-COM-07: Modificar Estado Operativo de Unidad Privativa
+AccessPassDeliveryFailedEvent,Event,UC-ACC-22: Procesar Fallo de Entrega de Invitación,UC-NOT-04: Distribuir Pase de Acceso a Visitante
+HandleDeliveryFailureCommand,Command,UC-ACC-22: Procesar Fallo de Entrega de Invitación,AccessPassDeliveryFailedEvent / UC-NOT-04: Distribuir Pase de Acceso a Visitante

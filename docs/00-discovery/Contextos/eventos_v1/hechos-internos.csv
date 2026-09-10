@@ -1,0 +1,34 @@
+﻿Nombre,Tipo,Caso de uso Origen,Módulo Origen,Destino de registro,Estado documental,Propósito
+SubscriptionPeriodExtendedEvent,DomainEvent,UC-SUS-04: Registrar Pago Manual,Suscripción,Registro interno de dominio / historial financiero,DOCUMENTADO,Registrar la nueva vigencia financiera tras pago exitoso.
+GracePeriodGrantedEvent,AuditEvent,UC-SUS-05: Reactivación Manual / Extensión de Gracia,Suscripción,AuditLog,DOCUMENTADO,Registrar acción excepcional de soporte con justificación.
+HouseModelRegisteredEvent,DomainEvent,UC-COM-02: Registrar Modelo de Propiedad,Gestión de Comunidad,Registro interno de dominio,DOCUMENTADO,Registrar creación de modelo de propiedad.
+HouseRegisteredEvent,DomainEvent,UC-COM-03: Registrar Unidad Privativa,Gestión de Comunidad,Registro interno de dominio / AuditLog,DOCUMENTADO,Registrar creación individual de unidad privativa.
+HouseRegisteredEvent,DomainEvent,UC-COM-08: Generar Bloque de Unidades Privativas,Gestión de Comunidad,Registro interno de dominio / AuditLog,DOCUMENTADO,Registrar creación individual dentro de operación masiva.
+PrimaryResidentAssignedEvent,DomainEvent,UC-COM-04: Asignar Residente Principal,Gestión de Comunidad,Registro interno de dominio,DOCUMENTADO,Registrar vínculo de residencia principal.
+SecondaryResidentRegisteredEvent,DomainEvent,UC-COM-05: Registrar Residente Secundario,Gestión de Comunidad,Registro interno de dominio,DOCUMENTADO,Registrar vínculo de residencia secundaria.
+PrivacyOverrideAuditedEvent,AuditEvent,UC-COM-10: Auditar Identidad de Visitante,Gestión de Comunidad,AuditLog inmutable,DOCUMENTADO,Registrar ruptura de privacidad con justificación.
+AccessDeniedEvent,AuditEvent,UC-ACC-03: Registrar Entrada Online,Control de Acceso,AuditLog,DOCUMENTADO,Registrar intento fallido de acceso.
+LocalCacheUpdatedEvent,TechnicalEvent,UC-ACC-04: Sincronizar Caché Offline,Control de Acceso / KioskApp,Log local / telemetría edge,DOCUMENTADO,Registrar actualización local del caché offline.
+DeferredAccessesProcessedEvent,TechnicalEvent,UC-ACC-05: Procesar Eventos Diferidos,Control de Acceso,OperationalLog / métrica de conciliación,DOCUMENTADO,Registrar procesamiento de lote diferido.
+ManualAccessGrantedEvent,TechnicalEvent,UC-ACC-06: Registrar Llegada Sorpresa,Control de Acceso,Comando técnico a hardware / AuditLog,DOCUMENTADO,Abrir barrera física desde flujo manual.
+ManualAccessGrantedEvent,TechnicalEvent,UC-ACC-20: Registrar Salida Manual desde Consola,Control de Acceso,Comando técnico a hardware / AuditLog,DOCUMENTADO,Abrir barrera física de salida desde flujo manual.
+ParkingSpaceReservedEvent,DomainEvent,UC-ACC-06: Registrar Llegada Sorpresa,Control de Acceso,Contador de aforo / registro interno,DOCUMENTADO,Registrar consumo de aforo por visita vehicular manual.
+ParkingSpaceReleasedEvent,DomainEvent,UC-ACC-08: Registrar Salida de Visitante,Control de Acceso,Contador de aforo / registro interno,DOCUMENTADO,Registrar liberación de aforo por salida.
+ParkingSpaceReleasedEvent,DomainEvent,UC-ACC-20: Registrar Salida Manual desde Consola,Control de Acceso,Contador de aforo / registro interno,DOCUMENTADO,Registrar liberación de aforo por salida manual.
+EmergencyOverrideResolvedEvent,AuditEvent,UC-ACC-12: Justificar Contingencia Pendiente,Control de Acceso,AuditLog,DOCUMENTADO,Cerrar evento de emergencia con justificación.
+InvitationExpiredEvent,DomainEvent,UC-ACC-09: Invalidar Invitaciones Expiradas,Control de Acceso,Registro interno / analítica,DOCUMENTADO,Registrar expiración de invitación no utilizada.
+OfflineDepartureRegisteredEvent,TechnicalEvent,UC-ACC-10: Registrar Salida Offline,Control de Acceso / KioskApp,Cola local DeferredAccessDTO,DOCUMENTADO,Registrar salida offline para conciliación posterior.
+OfflineAccessGrantedEvent,TechnicalEvent,UC-ACC-11: Validar Acceso Offline,Control de Acceso / KioskApp,Cola local DeferredAccessDTO,DOCUMENTADO,Registrar entrada offline para conciliación posterior.
+HardwareHeartbeatReceivedEvent,TechnicalEvent,UC-ACC-13: Sincronizar Estado Operativo Global,Control de Acceso,Telemetría / OperationalLog,DOCUMENTADO,Registrar latido operativo de hardware.
+UserIdentityRegisteredEvent,DomainEvent,UC-IAM-01: Registrar Identidad Externa,Seguridad / IAM,Registro interno IAM,DOCUMENTADO,Registrar vínculo entre IdP externo y usuario interno.
+NewStaffProvisionedEvent,DomainEvent,UC-IAM-02: Provisionar Nueva Cuenta de Personal,Seguridad / IAM,Registro interno IAM / AuditLog,DOCUMENTADO,Registrar alta de personal.
+ExistingStaffAssignedEvent,DomainEvent,UC-IAM-03: Asignar Comunidad a Personal Existente,Seguridad / IAM,Registro interno IAM / AuditLog,DOCUMENTADO,Registrar asignación adicional de comunidad.
+SessionRevokedEvent,AuditEvent,UC-IAM-04: Revocar Sesión,Seguridad / IAM,SecurityLog / AuditLog,DOCUMENTADO,Registrar revocación de sesión.
+PushNotificationDispatchedEvent,TechnicalEvent,UC-NOT-01: Notificar Acceso a Residente,Notificaciones,NotificationDeliveryLog,DOCUMENTADO,Registrar despacho exitoso de push.
+PushNotificationFailedEvent,TechnicalEvent,UC-NOT-01: Notificar Acceso a Residente,Notificaciones,NotificationDeliveryLog,DOCUMENTADO,Registrar fallo de push.
+CriticalAlertDispatchedEvent,AuditEvent,UC-NOT-02: Despachar Alerta Crítica de Seguridad,Notificaciones,AuditLog / NotificationDeliveryLog,DOCUMENTADO,Registrar despacho de alerta crítica.
+ExitPushDispatchedEvent,TechnicalEvent,UC-NOT-03: Notificar Salida a Residente,Notificaciones,NotificationDeliveryLog,DOCUMENTADO,Registrar despacho de push de salida.
+AccessPassDispatchedEvent,TechnicalEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante,Notificaciones,NotificationDeliveryLog,DOCUMENTADO,Registrar despacho exitoso del pase.
+CancellationPassDispatchedEvent,TechnicalEvent,UC-NOT-05: Notificar Cancelación de Pase de Acceso,Notificaciones,NotificationDeliveryLog,DOCUMENTADO,Registrar despacho de cancelación.
+AccessPassResendDispatchedEvent,TechnicalEvent,UC-NOT-06: Despachar Reenvío de Pase de Acceso,Notificaciones,NotificationDeliveryLog,DOCUMENTADO,Registrar reenvío exitoso del pase.
+AccessPassResendFailedEvent,TechnicalEvent,UC-NOT-06: Despachar Reenvío de Pase de Acceso,Notificaciones,NotificationDeliveryLog,DOCUMENTADO,Registrar fallo de reenvío del pase.

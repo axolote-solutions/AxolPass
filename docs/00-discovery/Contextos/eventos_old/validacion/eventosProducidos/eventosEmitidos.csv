@@ -1,0 +1,60 @@
+Evento,Caso de uso Emisor
+CommunityProvisionedEvent,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+CommunityAdminAssignedEvent,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+SubscriptionPeriodExtendedEvent,UC-SUS-04: Registrar Pago Manual
+SubscriptionReactivatedEvent,UC-SUS-04: Registrar Pago Manual
+GracePeriodGrantedEvent,UC-SUS-05: Reactivación Manual / Extensión de Gracia
+SubscriptionReactivatedEvent,UC-SUS-05: Reactivación Manual / Extensión de Gracia
+CommunityProfileUpdatedEvent,UC-SUS-10: Actualizar Datos Administrativos de Fraccionamiento
+SubscriptionSuspendedEvent,UC-SUS-11: Suspender Suscripción por Morosidad
+CommunityOperationsStartedEvent,UC-SUS-12: Activar Comunidad Programada
+SubscriptionCanceledEvent,UC-SUS-14: Cancelar / Dar de Baja Fraccionamiento
+CommunitySettingsUpdatedEvent,UC-COM-01: Configurar Reglas de Comunidad
+HouseModelRegisteredEvent,UC-COM-02: Registrar Modelo de Propiedad
+HouseRegisteredEvent,UC-COM-03: Registrar Unidad Privativa
+PrimaryResidentAssignedEvent,UC-COM-04: Asignar Residente Principal
+SecondaryResidentRegisteredEvent,UC-COM-05: Registrar Residente Secundario
+ResidentRemovedEvent,UC-COM-06: Remover Residente
+HouseOperationalStatusChangedEvent,UC-COM-07: Modificar Estado Operativo de Unidad Privativa
+HouseSuspendedNotificationEvent,UC-COM-07: Modificar Estado Operativo de Unidad Privativa
+HouseRegisteredEvent,UC-COM-08: Generar Bloque de Unidades Privativas
+PrivacyOverrideAuditedEvent,UC-COM-10: Auditar Identidad de Visitante
+InvitationGeneratedEvent,UC-ACC-01: Generar Invitación de Acceso
+InvitationCanceledEvent,UC-ACC-02: Cancelar Invitación
+InvitationContactUpdatedEvent,UC-ACC-14: Actualizar Contacto de Invitación
+InvitationResendRequestedEvent,UC-ACC-15: Solicitar Reenvío de Invitación
+AccessGrantedEvent,UC-ACC-03: Registrar Entrada Online
+AccessDeniedEvent,UC-ACC-03: Registrar Entrada Online
+DeferredAccessesProcessedEvent,UC-ACC-05: Procesar Eventos Diferidos
+AccessGrantedEvent,UC-ACC-05: Procesar Eventos Diferidos
+DepartureRegisteredEvent,UC-ACC-05: Procesar Eventos Diferidos
+OfflineOverrideAlertEvent,UC-ACC-05: Procesar Eventos Diferidos
+ManualAccessGrantedEvent,UC-ACC-06: Registrar Llegada Sorpresa
+UnscheduledVisitAlertEvent,UC-ACC-06: Registrar Llegada Sorpresa
+ParkingSpaceReservedEvent,UC-ACC-06: Registrar Llegada Sorpresa
+EmergencyOverrideTriggeredEvent,UC-ACC-07: Ejecutar Apertura de Contingencia
+DepartureRegisteredEvent,UC-ACC-20: Registrar Salida Manual desde Consola
+ParkingSpaceReleasedEvent,UC-ACC-20: Registrar Salida Manual desde Consola
+ManualAccessGrantedEvent,UC-ACC-20: Registrar Salida Manual desde Consola
+EmergencyOverrideResolvedEvent,UC-ACC-12: Justificar Contingencia Pendiente
+DepartureRegisteredEvent,UC-ACC-08: Registrar Salida de Visitante
+ParkingSpaceReleasedEvent,UC-ACC-08: Registrar Salida de Visitante
+InvitationExpiredEvent,UC-ACC-09: Invalidar Invitaciones Expiradas
+ParkingSpaceReleasedEvent,UC-ACC-09: Invalidar Invitaciones Expiradas
+OfflineDepartureRegisteredEvent,UC-ACC-10: Registrar Salida Offline
+OfflineAccessGrantedEvent,UC-ACC-11: Validar Acceso Offline
+HardwareHeartbeatReceivedEvent,UC-ACC-13: Sincronizar Estado Operativo Global
+InvitationStatusUpdatedEvent,UC-ACC-22: Procesar Fallo de Entrega de Invitación
+UserIdentityRegisteredEvent,UC-IAM-01: Registrar Identidad Externa
+NewStaffProvisionedEvent,UC-IAM-02: Provisionar Nueva Cuenta de Personal
+ExistingStaffAssignedEvent,UC-IAM-03: Asignar Comunidad a Personal Existente
+SessionRevokedEvent,UC-IAM-04: Revocar Sesión
+PushNotificationDispatchedEvent,UC-NOT-01: Notificar Acceso a Residente
+PushNotificationFailedEvent,UC-NOT-01: Notificar Acceso a Residente
+CriticalAlertDispatchedEvent,UC-NOT-02: Despachar Alerta Crítica de Seguridad
+ExitPushDispatchedEvent,UC-NOT-03: Notificar Salida a Residente
+AccessPassDispatchedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante
+AccessPassDeliveryFailedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante
+CancellationPassDispatchedEvent,UC-NOT-05: Notificar Cancelación de Pase de Acceso
+AccessPassResendDispatchedEvent,UC-NOT-06: Despachar Reenvío de Pase de Acceso
+AccessPassResendFailedEvent,UC-NOT-06: Despachar Reenvío de Pase de Acceso

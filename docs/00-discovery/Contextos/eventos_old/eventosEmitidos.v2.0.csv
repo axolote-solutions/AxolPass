@@ -1,0 +1,55 @@
+Evento,Caso de uso Emisor,Clasificación
+CommunityProvisionedEvent,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento,IntegrationEvent
+CommunityAdminAssignedEvent,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento,IntegrationEvent
+SubscriptionPeriodExtendedEvent,UC-SUS-04: Registrar Pago Manual,PENDIENTE
+SubscriptionReactivatedEvent,UC-SUS-04: Registrar Pago Manual,IntegrationEvent
+SubscriptionReactivatedEvent,UC-SUS-05: Reactivación Manual / Extensión de Gracia,IntegrationEvent
+GracePeriodGrantedEvent,UC-SUS-05: Reactivación Manual / Extensión de Gracia,AuditEvent
+CommunityProfileUpdatedEvent,UC-SUS-10: Actualizar Datos Administrativos de Fraccionamiento,IntegrationEvent
+SubscriptionSuspendedEvent,UC-SUS-11: Suspender Suscripción por Morosidad,IntegrationEvent
+CommunityOperationsStartedEvent,UC-SUS-12: Activar Comunidad Programada,IntegrationEvent
+SubscriptionCanceledEvent,UC-SUS-14: Cancelar / Dar de Baja Fraccionamiento,IntegrationEvent
+CommunitySettingsUpdatedEvent,UC-COM-01: Configurar Reglas de Comunidad,IntegrationEvent
+HouseModelRegisteredEvent,UC-COM-02: Registrar Modelo de Propiedad,PENDIENTE
+HouseRegisteredEvent,UC-COM-03: Registrar Unidad Privativa,AuditEvent
+HouseRegisteredEvent,UC-COM-08: Generar Bloque de Unidades Privativas,AuditEvent
+PrimaryResidentAssignedEvent,UC-COM-04: Asignar Residente Principal,PENDIENTE
+SecondaryResidentRegisteredEvent,UC-COM-05: Registrar Residente Secundario,PENDIENTE
+ResidentRemovedEvent,UC-COM-06: Remover Residente,IntegrationEvent
+HouseOperationalStatusChangedEvent,UC-COM-07: Modificar Estado Operativo de Unidad Privativa,IntegrationEvent
+HouseSuspendedNotificationEvent,UC-COM-07: Modificar Estado Operativo de Unidad Privativa,TechnicalEvent
+PrivacyOverrideAuditedEvent,UC-COM-10: Auditar Identidad de Visitante,AuditEvent
+InvitationGeneratedEvent,UC-ACC-01: Generar Invitación de Acceso,IntegrationEvent
+InvitationCanceledEvent,UC-ACC-02: Cancelar Invitación,IntegrationEvent
+AccessGrantedEvent,UC-ACC-03: Registrar Entrada Online,IntegrationEvent
+AccessDeniedEvent,UC-ACC-03: Registrar Entrada Online,TechnicalEvent
+DeferredAccessesProcessedEvent,UC-ACC-05: Procesar Eventos Diferidos,IntegrationEvent
+OfflineOverrideAlertEvent,UC-ACC-05: Procesar Eventos Diferidos,IntegrationEvent
+ManualAccessGrantedEvent,UC-ACC-06: Registrar Llegada Sorpresa,TechnicalEvent
+ManualAccessGrantedEvent,UC-ACC-20: Salida Manual,TechnicalEvent
+UnscheduledVisitAlertEvent,UC-ACC-06: Registrar Llegada Sorpresa,IntegrationEvent
+ParkingSpaceReservedEvent,UC-ACC-06: Registrar Llegada Sorpresa,IntegrationEvent
+EmergencyOverrideTriggeredEvent,UC-ACC-07: Ejecutar Apertura de Contingencia,IntegrationEvent
+DepartureRegisteredEvent,UC-ACC-08: Registrar Salida,IntegrationEvent
+DepartureRegisteredEvent,UC-ACC-20: Salida Manual,IntegrationEvent
+ParkingSpaceReleasedEvent,UC-ACC-08: Registrar Salida,IntegrationEvent
+ParkingSpaceReleasedEvent,UC-ACC-20: Salida Manual,IntegrationEvent
+InvitationExpiredEvent,UC-ACC-09: Invalidar Invitaciones Expiradas,TechnicalEvent
+OfflineDepartureRegisteredEvent,UC-ACC-10: Registrar Salida Offline,TechnicalEvent
+OfflineAccessGrantedEvent,UC-ACC-11: Validar Acceso Offline,TechnicalEvent
+EmergencyOverrideResolvedEvent,UC-ACC-12: Justificar Contingencia Pendiente,AuditEvent
+HardwareHeartbeatReceivedEvent,UC-ACC-13: Sincronizar Estado Operativo Global,TechnicalEvent
+InvitationContactUpdatedEvent,UC-ACC-14: Actualizar Contacto de Invitación,IntegrationEvent
+InvitationResendRequestedEvent,UC-ACC-15: Solicitar Reenvío de Invitación,IntegrationEvent
+UserIdentityRegisteredEvent,UC-IAM-01: Registrar Identidad Externa,IntegrationEvent
+NewStaffProvisionedEvent,UC-IAM-02: Provisionar Nueva Cuenta de Personal,IntegrationEvent
+ExistingStaffAssignedEvent,UC-IAM-03: Asignar Comunidad a Personal Existente,IntegrationEvent
+SessionRevokedEvent,UC-IAM-04: Revocar Sesión,AuditEvent
+ResidentNotificationDispatchedEvent,UC-NOT-01: Notificar Acceso a Residente,TechnicalEvent
+CriticalAlertDispatchedEvent,UC-NOT-02: Escalar Alerta de Pánico,AuditEvent
+AccessPassDispatchedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante,AuditEvent
+AccessPassDeliveryFailedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante,IntegrationEvent
+CancellationNoticeDispatchedEvent,UC-NOT-05: Notificar Cancelación de Pase,AuditEvent
+AccessPassResendDispatchedEvent,UC-NOT-06: Procesar Reenvío Manual de Pase,AuditEvent
+AccessPassResendFailedEvent,UC-NOT-06: Procesar Reenvío Manual de Pase,IntegrationEvent
+AdminAlertDispatchedEvent,UC-NOT-07: Despachar Alerta Administrativa,AuditEvent

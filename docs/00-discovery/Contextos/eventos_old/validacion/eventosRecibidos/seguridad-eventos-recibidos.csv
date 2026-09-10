@@ -1,0 +1,2 @@
+﻿Evento,Caso de uso Receptor,Caso de uso Emisor
+CommunityAdminAssignedEvent,UC-IAM-02: Provisionar Nueva Cuenta de Personal,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento

@@ -1,0 +1,11 @@
+﻿Evento,Caso de uso Emisor
+CommunityProvisionedEvent,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+CommunityAdminAssignedEvent,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+SubscriptionPeriodExtendedEvent,UC-SUS-04: Registrar Pago Manual
+SubscriptionReactivatedEvent,UC-SUS-04: Registrar Pago Manual
+GracePeriodGrantedEvent,UC-SUS-05: Reactivación Manual / Extensión de Gracia
+SubscriptionReactivatedEvent,UC-SUS-05: Reactivación Manual / Extensión de Gracia
+CommunityProfileUpdatedEvent,UC-SUS-10: Actualizar Datos Administrativos de Fraccionamiento
+SubscriptionSuspendedEvent,UC-SUS-11: Suspender Suscripción por Morosidad
+CommunityOperationsStartedEvent,UC-SUS-12: Activar Comunidad Programada
+SubscriptionCanceledEvent,UC-SUS-14: Cancelar / Dar de Baja Fraccionamiento

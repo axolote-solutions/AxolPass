@@ -1,0 +1,49 @@
+@startuml
+skinparam style strictuml
+skinparam defaultTextAlignment center
+skinparam ActivityBackgroundColor #0984e3
+skinparam ActivityFontColor white
+skinparam ActivityBorderColor black
+skinparam ArrowColor black
+skinparam ConditionEndStyle hline
+
+title Flujo Transaccional UC-SUS-04: Registrar Pago Manual
+
+start
+:SystemAdmin ejecuta Comando;
+:Ingreso de Datos:\n- amount\n- referenceNumber\n- communityId;
+
+if (¿referenceNumber es\núnico en el Repositorio?) then (No)
+  #d63031:<color:white><b>ABORTAR: Error 409 Conflict</b>\nEl recibo ya fue registrado previamente</color>;
+  stop
+else (Sí)
+  
+  #8e44ad:<color:white><b>Obtener Comunidad (Vía Repositorio)</b>\nRecuperar perfil financiero:\n- basePrice\n- paidThroughDate\n- contractEndDate\n- status</color>;
+
+  :Calcular: ciclosPagados = amount / basePrice;
+  :Calcular: newPaidThroughDate = paidThroughDate + ciclosPagados;
+
+  if (¿newPaidThroughDate <=\ncontractEndDate?) then (No)
+    #d63031:<color:white><b>ABORTAR: Error 422</b>\nEl pago excede la vigencia legal del contrato</color>;
+    stop
+  else (Sí)
+    :Aplicar Pago a la Entidad\nActualizar paidThroughDate (En Memoria);
+
+    if (¿newPaidThroughDate > HOY?) then (No)
+      :Mantener estado actual (SUSPENDED)\n<i>La deuda parcial fue cubierta</i>;
+    else (Sí)
+      if (¿Estado actual\nes SUSPENDED?) then (Sí)
+        :Mutar estado a ACTIVE\n<i>(Se levanta el castigo)</i>;
+        #00b894:<color:white>Disparar: SubscriptionReactivatedEvent</color>;
+      else (No)
+        :Mantener estado ACTIVE\n<i>(Cliente paga por adelantado / Doble pago)</i>;
+      endif
+    endif
+
+    #2d3436:<color:white><b>COMMIT: Persistir Cambios (Vía Repositorio)</b></color>;
+    #00b894:<color:white>Disparar: SubscriptionPeriodExtendedEvent</color>;
+  endif
+endif
+
+stop
+@enduml

@@ -1,0 +1,68 @@
+@startuml
+title Domain Map – AxolPass (Etapa 1 – Conceptual, coloreado)
+
+skinparam rectangle {
+  BorderColor #444
+  FontColor #000
+  RoundCorner 15
+}
+
+' === PALETA DE COLORES (suave, conceptual) ===
+skinparam rectangle {
+  BackgroundColor<<Access>> #D6EAF8
+  BackgroundColor<<Community>> #D5F5E3
+  BackgroundColor<<Identity>> #FAD7A0
+  BackgroundColor<<Rules>> #F9E79F
+  BackgroundColor<<Notify>> #FDEBD0
+  BackgroundColor<<Audit>> #E8DAEF
+  BackgroundColor<<Admin>> #F5CBA7
+}
+
+' === ÁREAS FUNCIONALES DEL DOMINIO ===
+
+rectangle "Accesos y Control Operativo" <<Access>> {
+  :Acceso;
+  :Invitación;
+  :Guardia;
+  :Visitante;
+}
+
+rectangle "Gestión de Comunidad" <<Community>> {
+  :Comunidad;
+  :Vivienda;
+  :Residente;
+  :Zona;
+  :Puerta;
+}
+
+rectangle "Identidad y Usuarios" <<Identity>> {
+  :Usuario;
+  :Rol;
+  :Permiso;
+}
+
+rectangle "Reglas y Políticas" <<Rules>> {
+  :Regla;
+  :Condición;
+  :Política;
+}
+
+rectangle "Notificaciones y Comunicación" <<Notify>> {
+  :Notificación;
+  :Mensaje;
+  :Destinatario;
+}
+
+rectangle "Auditoría y Observabilidad" <<Audit>> {
+  :Evento_de_auditoría;
+  :Métrica;
+  :Reporte;
+}
+
+rectangle "Administración Comercial (Axolote)" <<Admin>> {
+  :Comunidad_(alta);
+  :Plan;
+  :Estado_operativo;
+}
+
+@enduml

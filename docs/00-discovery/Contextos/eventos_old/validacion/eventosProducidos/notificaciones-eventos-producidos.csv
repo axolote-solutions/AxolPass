@@ -1,0 +1,10 @@
+﻿Evento,Caso de uso Emisor
+PushNotificationDispatchedEvent,UC-NOT-01: Notificar Acceso a Residente
+PushNotificationFailedEvent,UC-NOT-01: Notificar Acceso a Residente
+CriticalAlertDispatchedEvent,UC-NOT-02: Despachar Alerta Crítica de Seguridad
+ExitPushDispatchedEvent,UC-NOT-03: Notificar Salida a Residente
+AccessPassDispatchedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante
+AccessPassDeliveryFailedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante
+CancellationPassDispatchedEvent,UC-NOT-05: Notificar Cancelación de Pase de Acceso
+AccessPassResendDispatchedEvent,UC-NOT-06: Despachar Reenvío de Pase de Acceso
+AccessPassResendFailedEvent,UC-NOT-06: Despachar Reenvío de Pase de Acceso

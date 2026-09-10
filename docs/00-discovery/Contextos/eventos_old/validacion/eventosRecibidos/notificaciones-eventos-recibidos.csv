@@ -1,0 +1,12 @@
+﻿Evento,Caso de uso Receptor,Caso de uso Emisor
+AccessGrantedEvent,UC-NOT-01: Notificar Acceso a Residente,UC-ACC-03: Registrar Entrada Online
+AccessGrantedEvent,UC-NOT-01: Notificar Acceso a Residente,UC-ACC-05: Procesar Eventos Diferidos
+UnscheduledVisitAlertEvent,UC-NOT-01: Notificar Acceso a Residente,UC-ACC-06: Registrar Llegada Sorpresa
+EmergencyOverrideTriggeredEvent,UC-NOT-02: Despachar Alerta Crítica de Seguridad,UC-ACC-07: Ejecutar Apertura de Contingencia
+DepartureRegisteredEvent,UC-NOT-03: Notificar Salida a Residente,UC-ACC-08: Registrar Salida de Visitante
+DepartureRegisteredEvent,UC-NOT-03: Notificar Salida a Residente,UC-ACC-20: Registrar Salida Manual desde Consola
+DepartureRegisteredEvent,UC-NOT-03: Notificar Salida a Residente,UC-ACC-05: Procesar Eventos Diferidos
+InvitationGeneratedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante,UC-ACC-01: Generar Invitación de Acceso
+InvitationContactUpdatedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante,UC-ACC-14: Actualizar Contacto de Invitación
+InvitationCanceledEvent,UC-NOT-05: Notificar Cancelación de Pase de Acceso,UC-ACC-02: Cancelar Invitación
+InvitationResendRequestedEvent,UC-NOT-06: Despachar Reenvío de Pase de Acceso,UC-ACC-15: Solicitar Reenvío de Invitación

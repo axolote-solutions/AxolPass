@@ -1,0 +1,17 @@
+Evento,Caso de uso Receptor,Caso de uso Emisor
+CommunityProvisionedEvent,UC-COM-09: Inicializar Entorno de Comunidad,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+CommunitySettingsUpdatedEvent,UC-ACC-19: Inicializar Entorno de Caseta,UC-COM-01: Configurar Reglas de Comunidad
+HouseOperationalStatusChangedEvent,UC-ACC-21: Reaccionar a Suspensión de Unidad,UC-COM-07: Modificar Estado Operativo de Unidad Privativa
+AccessPassDeliveryFailedEvent,UC-ACC-22: Procesar Fallo de Entrega de Invitación,UC-NOT-04: Distribuir Pase de Acceso a Visitante
+CommunityAdminAssignedEvent,UC-IAM-02: Provisionar Nueva Cuenta de Personal,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+AccessGrantedEvent,UC-NOT-01: Notificar Acceso a Residente,UC-ACC-03: Registrar Entrada Online
+AccessGrantedEvent,UC-NOT-01: Notificar Acceso a Residente,UC-ACC-05: Procesar Eventos Diferidos
+UnscheduledVisitAlertEvent,UC-NOT-01: Notificar Acceso a Residente,UC-ACC-06: Registrar Llegada Sorpresa
+EmergencyOverrideTriggeredEvent,UC-NOT-02: Despachar Alerta Crítica de Seguridad,UC-ACC-07: Ejecutar Apertura de Contingencia
+DepartureRegisteredEvent,UC-NOT-03: Notificar Salida a Residente,UC-ACC-08: Registrar Salida de Visitante
+DepartureRegisteredEvent,UC-NOT-03: Notificar Salida a Residente,UC-ACC-20: Registrar Salida Manual desde Consola
+DepartureRegisteredEvent,UC-NOT-03: Notificar Salida a Residente,UC-ACC-05: Procesar Eventos Diferidos
+InvitationGeneratedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante,UC-ACC-01: Generar Invitación de Acceso
+InvitationContactUpdatedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante,UC-ACC-14: Actualizar Contacto de Invitación
+InvitationCanceledEvent,UC-NOT-05: Notificar Cancelación de Pase de Acceso,UC-ACC-02: Cancelar Invitación
+InvitationResendRequestedEvent,UC-NOT-06: Despachar Reenvío de Pase de Acceso,UC-ACC-15: Solicitar Reenvío de Invitación

@@ -1,0 +1,69 @@
+@startuml
+title Context Map – AxolPass (Etapa 1 – Conceptual, con colores)
+
+skinparam rectangle {
+  BorderColor #444
+  FontColor #000
+  RoundCorner 15
+}
+
+' === PALETA DE COLORES (suave, conceptual) ===
+skinparam rectangle {
+  BackgroundColor<<Access>> #D6EAF8
+  BackgroundColor<<Community>> #D5F5E3
+  BackgroundColor<<Admin>> #FAD7A0
+}
+
+' === CONTEXTOS DE ACCESO (AZULES) ===
+rectangle "Invitation Management" <<Access>> as Invitation
+rectangle "Access Control" <<Access>> as Access
+rectangle "Fallback & Recovery" <<Access>> as Fallback
+rectangle "Guard Management" <<Access>> as Guard
+
+' === CONTEXTOS DE COMUNIDAD (VERDES) ===
+rectangle "Community Configuration" <<Community>> as Config
+rectangle "Housing Administration" <<Community>> as Housing
+rectangle "Rule Engine" <<Community>> as Rules
+
+' === CONTEXTOS ADMINISTRATIVOS Y DE SOPORTE (NARANJAS) ===
+rectangle "Notification Service" <<Admin>> as Notify
+rectangle "Access Monitoring & Reports" <<Admin>> as Audit
+rectangle "User Management" <<Admin>> as Users
+rectangle "Axolote Administration" <<Admin>> as Axolote
+
+' === RELACIONES CONCEPTUALES (SIN FLECHAS, SIN PATRONES) ===
+
+Invitation -- Notify : Relación conceptual\n(Invitaciones generan comunicación)
+Invitation -- Config : Relación conceptual\n(Invitaciones dependen de reglas)
+Invitation -- Users : Relación conceptual\n(Residentes generan invitaciones)
+
+Access -- Invitation : Relación conceptual\n(Accesos dependen de invitaciones)
+Access -- Rules : Relación conceptual\n(Accesos dependen de reglas)
+Access -- Config : Relación conceptual\n(Accesos dependen de configuración)
+Access -- Housing : Relación conceptual\n(Accesos dependen de permisos)
+Access -- Audit : Relación conceptual\n(Accesos generan auditoría)
+Access -- Fallback : Relación conceptual\n(Accesos pueden requerir fallback)
+
+Housing -- Users : Relación conceptual\n(Residentes tienen identidad)
+Housing -- Config : Relación conceptual\n(Viviendas pertenecen a la comunidad)
+
+Rules -- Config : Relación conceptual\n(Reglas dependen de configuración)
+Rules -- Access : Relación conceptual\n(Reglas afectan accesos)
+
+Notify -- Invitation : Relación conceptual\n(Notificaciones por invitaciones)
+Notify -- Access : Relación conceptual\n(Notificaciones por accesos)
+
+Audit -- Access : Relación conceptual\n(Auditoría de accesos)
+Audit -- Guard : Relación conceptual\n(Auditoría de intervenciones)
+Audit -- Fallback : Relación conceptual\n(Auditoría de incidencias)
+
+Fallback -- Guard : Relación conceptual\n(Guardias ejecutan fallback)
+Fallback -- Access : Relación conceptual\n(Fallback complementa accesos)
+
+Guard -- Users : Relación conceptual\n(Guardias tienen identidad)
+Guard -- Housing : Relación conceptual\n(Guardias interactúan con residentes)
+
+Users -- Axolote : Relación conceptual\n(Axolote administra identidades)
+Config -- Axolote : Relación conceptual\n(Axolote crea comunidades)
+
+@enduml

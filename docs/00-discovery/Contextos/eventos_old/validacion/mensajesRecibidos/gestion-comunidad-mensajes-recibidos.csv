@@ -1,0 +1,12 @@
+﻿Mensaje,Tipo,Caso de uso Receptor,Caso de uso Emisor
+ConfigureCommunityCommand,Command,UC-COM-01: Configurar Reglas de Comunidad,PENDIENTE
+RegisterHouseModelCommand,Command,UC-COM-02: Registrar Modelo de Propiedad,PENDIENTE
+RegisterHouseCommand,Command,UC-COM-03: Registrar Unidad Privativa,PENDIENTE
+AssignPrimaryResidentCommand,Command,UC-COM-04: Asignar Residente Principal,PENDIENTE
+RegisterSecondaryResidentCommand,Command,UC-COM-05: Registrar Residente Secundario,PENDIENTE
+RemoveResidentCommand,Command,UC-COM-06: Remover Residente,PENDIENTE
+ChangeHouseOperationalStatusCommand,Command,UC-COM-07: Modificar Estado Operativo de Unidad Privativa,PENDIENTE
+GenerateHouseBlockCommand,Command,UC-COM-08: Generar Bloque de Unidades Privativas,PENDIENTE
+CommunityProvisionedEvent,Event,UC-COM-09: Inicializar Entorno de Comunidad,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+InitializeCommunityCommand,Command,UC-COM-09: Inicializar Entorno de Comunidad,CommunityProvisionedEvent / UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+RevealVisitorIdentityCommand,Command,UC-COM-10: Auditar Identidad de Visitante,PENDIENTE

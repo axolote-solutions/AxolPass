@@ -1,0 +1,11 @@
+﻿Evento,Caso de uso Emisor
+CommunitySettingsUpdatedEvent,UC-COM-01: Configurar Reglas de Comunidad
+HouseModelRegisteredEvent,UC-COM-02: Registrar Modelo de Propiedad
+HouseRegisteredEvent,UC-COM-03: Registrar Unidad Privativa
+PrimaryResidentAssignedEvent,UC-COM-04: Asignar Residente Principal
+SecondaryResidentRegisteredEvent,UC-COM-05: Registrar Residente Secundario
+ResidentRemovedEvent,UC-COM-06: Remover Residente
+HouseOperationalStatusChangedEvent,UC-COM-07: Modificar Estado Operativo de Unidad Privativa
+HouseSuspendedNotificationEvent,UC-COM-07: Modificar Estado Operativo de Unidad Privativa
+HouseRegisteredEvent,UC-COM-08: Generar Bloque de Unidades Privativas
+PrivacyOverrideAuditedEvent,UC-COM-10: Auditar Identidad de Visitante

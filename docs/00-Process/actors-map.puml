@@ -1,0 +1,63 @@
+@startuml
+title Mapa de Actores Conceptual – AxolPass (Etapa 0)
+
+skinparam rectangle {
+  BackgroundColor #F9F9F9
+  BorderColor #555555
+  RoundCorner 15
+}
+
+skinparam arrow {
+  Color #777777
+}
+
+rectangle "Axolote Solutions\n(Actores Internos)" as Internal {
+    rectangle "Sponsors / Inversionistas" as Sponsors
+    rectangle "SystemAdmin\n(Operaciones / Soporte)" as SystemAdmin
+}
+
+rectangle "Cliente y Comunidad\n(Actores Externos)" as External {
+    rectangle "Mesa Directiva /\nComité de Vigilancia" as Mesa
+    rectangle "CommunityAdmin\n(Administrador Local)" as CommunityAdmin
+    rectangle "ResidentMain\n(Residente Principal)" as ResidentMain
+    rectangle "ResidentSecondary\n(Residente Secundario)" as ResidentSecondary
+    rectangle "SecurityGuard\n(Guardia de Seguridad)" as Guard
+    rectangle "Guest\n(Visitante)" as Guest
+}
+
+rectangle "Actores del Sistema\n(Autómatas / Hardware)" as SystemActors {
+    rectangle "Sistema /\nBackground Workers" as Workers
+    rectangle "KioskApp\n(Tótem / Hardware)" as Kiosk
+}
+
+rectangle "Proveedores Externos\n(Delegación de Confianza)" as Providers {
+    rectangle "Identity Provider\n(IdP)" as IdP
+    rectangle "Pasarela de Pagos\n(PCI-DSS)" as Payments
+    rectangle "Plataformas Push\n(FCM / APNs)" as Push
+}
+
+' Relaciones conceptuales (sin flujos)
+Sponsors --> SystemAdmin : Gobernanza / inversión
+SystemAdmin --> Mesa : Provisionamiento comercial
+SystemAdmin --> CommunityAdmin : Soporte y operación global
+
+Mesa --> CommunityAdmin : Mandato / reglas internas
+
+CommunityAdmin --> ResidentMain : Gestión operativa
+ResidentMain --> ResidentSecondary : Delegación de acceso
+
+ResidentMain --> Guard : Presentación de invitaciones
+ResidentSecondary --> Guard : Presentación de invitaciones
+Guest --> Guard : Presentación de AccessToken
+
+Guard --> Kiosk : Validación de acceso
+Kiosk --> Workers : Reporte de eventos
+
+Workers --> ResidentMain : Notificaciones
+Workers --> ResidentSecondary : Notificaciones
+
+Workers --> Payments : Procesamiento de cobros
+Workers --> IdP : Delegación de identidad
+Workers --> Push : Entrega de notificaciones
+
+@enduml

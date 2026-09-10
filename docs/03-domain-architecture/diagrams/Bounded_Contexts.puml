@@ -1,0 +1,22 @@
+@startuml
+title AxolPass — Arquitectura de Bounded Contexts
+left to right direction
+
+rectangle "Suscripción y Facturación" as Subscription
+rectangle "Gestión de Comunidad" as Community
+rectangle "Identidad (IAM)" as IAM
+rectangle "Control de Accesos" as Access
+rectangle "Notificaciones y Alertas" as Notifications
+
+Subscription --> Community : habilita comunidad\ny limita capacidad
+Subscription --> IAM : habilita identidad\nadministrativa
+Subscription --> Access : estado comercial\ncondiciona operación
+Subscription --> Notifications : hechos comerciales\nrequieren comunicación
+IAM --> Community : identidades y alcances\npara residentes
+Community --> Access : reglas operativas\ny estado de casa
+Community --> Notifications : destinatarios\ncomunitarios
+IAM --> Access : identidad y autorización\nconceptual
+IAM --> Notifications : identidades para\ndirigir mensajes
+Access --> Notifications : hechos de acceso\ny excepciones
+
+@enduml
