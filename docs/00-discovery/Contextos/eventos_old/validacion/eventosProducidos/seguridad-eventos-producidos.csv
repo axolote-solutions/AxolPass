@@ -1,0 +1,5 @@
+﻿Evento,Caso de uso Emisor
+UserIdentityRegisteredEvent,UC-IAM-01: Registrar Identidad Externa
+NewStaffProvisionedEvent,UC-IAM-02: Provisionar Nueva Cuenta de Personal
+ExistingStaffAssignedEvent,UC-IAM-03: Asignar Comunidad a Personal Existente
+SessionRevokedEvent,UC-IAM-04: Revocar Sesión

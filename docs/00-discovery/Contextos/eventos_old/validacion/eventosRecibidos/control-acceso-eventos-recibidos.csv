@@ -1,0 +1,4 @@
+﻿Evento,Caso de uso Receptor,Caso de uso Emisor
+CommunitySettingsUpdatedEvent,UC-ACC-19: Inicializar Entorno de Caseta,UC-COM-01: Configurar Reglas de Comunidad
+HouseOperationalStatusChangedEvent,UC-ACC-21: Reaccionar a Suspensión de Unidad,UC-COM-07: Modificar Estado Operativo de Unidad Privativa
+AccessPassDeliveryFailedEvent,UC-ACC-22: Procesar Fallo de Entrega de Invitación,UC-NOT-04: Distribuir Pase de Acceso a Visitante

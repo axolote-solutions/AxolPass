@@ -1,0 +1,7 @@
+﻿Mensaje,Tipo,Caso de uso Receptor,Caso de uso Emisor
+RegisterExternalIdentityCommand,Command,UC-IAM-01: Registrar Identidad Externa,PENDIENTE
+ProvisionNewStaffAccountCommand,Command,UC-IAM-02: Provisionar Nueva Cuenta de Personal,PENDIENTE
+CommunityAdminAssignedEvent,Event,UC-IAM-02: Provisionar Nueva Cuenta de Personal,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+ProvisionNewStaffAccountCommand,Command,UC-IAM-02: Provisionar Nueva Cuenta de Personal,CommunityAdminAssignedEvent / UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+AssignCommunityToStaffCommand,Command,UC-IAM-03: Asignar Comunidad a Personal Existente,PENDIENTE
+RevokeSessionCommand,Command,UC-IAM-04: Revocar Sesión,PENDIENTE

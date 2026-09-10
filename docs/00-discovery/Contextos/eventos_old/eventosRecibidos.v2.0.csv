@@ -1,0 +1,66 @@
+Evento,Caso de uso Receptor,Caso de uso Emisor
+CommunityProvisionedEvent,UC-COM-09: Inicializar Entorno de Comunidad,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+CommunityAdminAssignedEvent,UC-IAM-02: Provisionar Nueva Cuenta de Personal,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+SubscriptionPeriodExtendedEvent,Contexto de Accesos (Receptor Pendiente / Bug),UC-SUS-04: Registrar Pago Manual
+SubscriptionReactivatedEvent,Contexto de Accesos (Receptor Implícito),UC-SUS-04: Registrar Pago Manual
+SubscriptionReactivatedEvent,Contexto de Accesos (Receptor Implícito),UC-SUS-05: Reactivación Manual / Extensión de Gracia
+GracePeriodGrantedEvent,Módulo de Auditoría (AuditLog),UC-SUS-05: Reactivación Manual / Extensión de Gracia
+CommunityProfileUpdatedEvent,Sincronización de Perfil Comunidad (Receptor Implícito),UC-SUS-10: Actualizar Datos Administrativos de Fraccionamiento
+SubscriptionSuspendedEvent,Filtro Transversal de Comunidad (Interceptor),UC-SUS-11: Suspender Suscripción por Morosidad
+SubscriptionSuspendedEvent,Modo de Bloqueo Local de Accesos (KioskApp),UC-SUS-11: Suspender Suscripción por Morosidad
+SubscriptionSuspendedEvent,UC-NOT-07: Despachar Alerta Administrativa,UC-SUS-11: Suspender Suscripción por Morosidad
+CommunityOperationsStartedEvent,Habilitador de Comunidad (Receptor Implícito),UC-SUS-12: Activar Comunidad Programada
+CommunityOperationsStartedEvent,Contexto de Accesos (Receptor Implícito),UC-SUS-12: Activar Comunidad Programada
+SubscriptionCanceledEvent,Filtro Transversal de Comunidad (Interceptor),UC-SUS-14: Cancelar / Dar de Baja Fraccionamiento
+SubscriptionCanceledEvent,Contexto de Accesos (Bloqueo Definitivo),UC-SUS-14: Cancelar / Dar de Baja Fraccionamiento
+SubscriptionCanceledEvent,UC-IAM-05: Revocar Sesiones por Evento de Dominio,UC-SUS-14: Cancelar / Dar de Baja Fraccionamiento
+CommunitySettingsUpdatedEvent,UC-ACC-19: Inicializar Entorno de Caseta,UC-COM-01: Configurar Reglas de Comunidad
+HouseModelRegisteredEvent,Receptor Pendiente (Bug / Flujo Incompleto),UC-COM-02: Registrar Modelo de Propiedad
+HouseRegisteredEvent,Módulo de Auditoría (AuditLog),UC-COM-03: Registrar Unidad Privativa
+HouseRegisteredEvent,Módulo de Auditoría (AuditLog),UC-COM-08: Generar Bloque de Unidades Privativas
+PrimaryResidentAssignedEvent,Módulo de Analítica / Comunidad (Receptor Pendiente / Bug),UC-COM-04: Asignar Residente Principal
+SecondaryResidentRegisteredEvent,Contexto de Notificaciones (Receptor Pendiente / Bug),UC-COM-05: Registrar Residente Secundario
+ResidentRemovedEvent,Cancelación en Cascada de Accesos (Receptor Implícito),UC-COM-06: Remover Residente
+ResidentRemovedEvent,UC-IAM-05: Revocar Sesiones por Evento de Dominio,UC-COM-06: Remover Residente
+HouseOperationalStatusChangedEvent,UC-ACC-21: Reaccionar a Suspensión de Unidad,UC-COM-07: Modificar Estado Operativo de Unidad Privativa
+HouseSuspendedNotificationEvent,Frontend Móvil (App Residente - Mostrar Alerta),UC-COM-07: Modificar Estado Operativo de Unidad Privativa
+PrivacyOverrideAuditedEvent,Módulo de Auditoría (AuditLog),UC-COM-10: Auditar Identidad de Visitante
+InvitationGeneratedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante,UC-ACC-01: Generar Invitación de Acceso
+InvitationCanceledEvent,UC-NOT-05: Notificar Cancelación de Pase,UC-ACC-02: Cancelar Invitación
+AccessGrantedEvent,UC-NOT-01: Notificar Acceso a Residente,UC-ACC-03: Registrar Entrada Online
+AccessDeniedEvent,Módulo de Auditoría y Reportes (AuditLog),UC-ACC-03: Registrar Entrada Online
+AccessDeniedEvent,Frontend Caseta (KioskApp - Mostrar Mensaje Error),UC-ACC-03: Registrar Entrada Online
+DeferredAccessesProcessedEvent,Módulo de Comunidad (Actualizar Aforo),UC-ACC-05: Procesar Eventos Diferidos
+OfflineOverrideAlertEvent,Contexto de Notificaciones (Receptor Implícito),UC-ACC-05: Procesar Eventos Diferidos
+OfflineOverrideAlertEvent,Frontend Móvil (App Residente - Alerta Desfase),UC-ACC-05: Procesar Eventos Diferidos
+ManualAccessGrantedEvent,Adaptador de Hardware IoT (Activar Relevador),UC-ACC-06: Registrar Llegada Sorpresa
+ManualAccessGrantedEvent,Adaptador de Hardware IoT (Activar Relevador),UC-ACC-20: Salida Manual
+UnscheduledVisitAlertEvent,UC-NOT-01: Notificar Acceso a Residente,UC-ACC-06: Registrar Llegada Sorpresa
+ParkingSpaceReservedEvent,Módulo de Comunidad (Descontar Aforo),UC-ACC-06: Registrar Llegada Sorpresa
+EmergencyOverrideTriggeredEvent,UC-NOT-02: Escalar Alerta de Pánico,UC-ACC-07: Ejecutar Apertura de Contingencia
+EmergencyOverrideTriggeredEvent,Módulo de Auditoría (AuditLog),UC-ACC-07: Ejecutar Apertura de Contingencia
+DepartureRegisteredEvent,UC-NOT-03: Notificar Salida de Visitante,UC-ACC-08: Registrar Salida
+DepartureRegisteredEvent,UC-NOT-03: Notificar Salida de Visitante,UC-ACC-20: Salida Manual
+ParkingSpaceReleasedEvent,Módulo de Comunidad (Liberar Aforo),UC-ACC-08: Registrar Salida
+ParkingSpaceReleasedEvent,Módulo de Comunidad (Liberar Aforo),UC-ACC-20: Salida Manual
+InvitationExpiredEvent,Módulo de Analítica y Reportes (Dashboard),UC-ACC-09: Invalidar Invitaciones Expiradas
+OfflineDepartureRegisteredEvent,Adaptador de Hardware IoT (Activar Relevador),UC-ACC-10: Registrar Salida Offline
+OfflineAccessGrantedEvent,Adaptador de Hardware IoT (Activar Relevador),UC-ACC-11: Validar Acceso Offline
+EmergencyOverrideResolvedEvent,Módulo de Auditoría (AuditLog),UC-ACC-12: Justificar Contingencia Pendiente
+HardwareHeartbeatReceivedEvent,Frontend Web (Dashboard Global),UC-ACC-13: Sincronizar Estado Operativo Global
+InvitationContactUpdatedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante,UC-ACC-14: Actualizar Contacto de Invitación
+InvitationResendRequestedEvent,UC-NOT-06: Procesar Reenvío Manual de Pase,UC-ACC-15: Solicitar Reenvío de Invitación
+UserIdentityRegisteredEvent,Contexto de Comunidad (Vincular Perfil Local),UC-IAM-01: Registrar Identidad Externa
+NewStaffProvisionedEvent,Contexto de Notificaciones (Enviar Credenciales),UC-IAM-02: Provisionar Nueva Cuenta de Personal
+ExistingStaffAssignedEvent,Contexto de Notificaciones (Aviso Nueva Asignación),UC-IAM-03: Asignar Comunidad a Personal Existente
+SessionRevokedEvent,Módulo de Auditoría (AuditLog),UC-IAM-04: Revocar Sesión
+ResidentNotificationDispatchedEvent,Módulo de Auditoría (AuditLog),UC-NOT-01: Notificar Acceso a Residente
+CriticalAlertDispatchedEvent,Módulo de Auditoría (AuditLog),UC-NOT-02: Escalar Alerta de Pánico
+AccessPassDispatchedEvent,Módulo de Auditoría (AuditLog),UC-NOT-04: Distribuir Pase de Acceso a Visitante
+AccessPassDeliveryFailedEvent,UC-ACC-22: Procesar Fallo de Entrega de Invitación,UC-NOT-04: Distribuir Pase de Acceso a Visitante
+CancellationNoticeDispatchedEvent,Módulo de Auditoría (AuditLog),UC-NOT-05: Notificar Cancelación de Pase
+AccessPassResendDispatchedEvent,Módulo de Auditoría (AuditLog),UC-NOT-06: Procesar Reenvío Manual de Pase
+AdminAlertDispatchedEvent,Módulo de Auditoría (AuditLog),UC-NOT-07: Despachar Alerta Administrativa
+Webhook de Notificación Asíncrona,Procesamiento de Pagos Automático (Relacionado a UC-SUS-04),Pasarela de Pagos Externa (Sistema Externo)
+Gatillo de Tiempo (Cron Job Diario),UC-SUS-11: Suspender Suscripción por Morosidad,Sistema Operativo (Scheduler Interno)
+Gatillo de Tiempo (Cron Job Diario),UC-SUS-12: Activar Comunidad Programada,Sistema Operativo (Scheduler Interno)

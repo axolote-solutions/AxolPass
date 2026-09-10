@@ -1,0 +1,27 @@
+Nombre_Evento,Caso_De_Uso_Receptor,Contexto_Receptor
+CommunityProvisionedEvent,UC-COM-09,Comunidad
+CommunityAdminAssignedEvent,UC-IAM-02,Seguridad
+SubscriptionReactivatedEvent,[PENDIENTE_POR_DOCUMENTAR],Control de Accesos
+CommunityProfileUpdatedEvent,[PENDIENTE_POR_DOCUMENTAR],Comunidad
+SubscriptionSuspendedEvent,[PENDIENTE_POR_DOCUMENTAR],Control de Accesos
+SubscriptionSuspendedEvent,[PENDIENTE_POR_DOCUMENTAR],Comunidad
+CommunityOperationsStartedEvent,[PENDIENTE_POR_DOCUMENTAR],Control de Accesos
+CommunityOperationsStartedEvent,[PENDIENTE_POR_DOCUMENTAR],Comunidad
+SubscriptionCanceledEvent,[PENDIENTE_POR_DOCUMENTAR],Control de Accesos
+SubscriptionCanceledEvent,[PENDIENTE_POR_DOCUMENTAR],Comunidad
+SubscriptionCanceledEvent,[PENDIENTE_POR_DOCUMENTAR],Seguridad
+AccessGrantedEvent,UC-NOT-01,Notificaciones
+UnscheduledVisitAlertEvent,UC-NOT-01,Notificaciones
+EmergencyOverrideTriggeredEvent,UC-NOT-02,Notificaciones
+DepartureRegisteredEvent,UC-NOT-03,Notificaciones
+InvitationGeneratedEvent,UC-NOT-04,Notificaciones
+InvitationContactUpdatedEvent,UC-NOT-04,Notificaciones
+InvitationCanceledEvent,UC-NOT-05,Notificaciones
+InvitationResendRequestedEvent,UC-NOT-06,Notificaciones
+SubscriptionStatusChangedEvent,UC-NOT-07,Notificaciones
+ResidentRemovedEvent,[PENDIENTE_POR_DOCUMENTAR],Control de Accesos
+ResidentRemovedEvent,[PENDIENTE_POR_DOCUMENTAR],Seguridad
+HouseOperationalStatusChangedEvent,UC-ACC-21,Control de Accesos
+HouseSuspendedNotificationEvent,[PENDIENTE_POR_DOCUMENTAR],Frontend / App Móvil
+CommunitySettingsUpdatedEvent,UC-ACC-19,Control de Accesos
+AccessPassDeliveryFailedEvent,UC-ACC-22,Control de Accesos

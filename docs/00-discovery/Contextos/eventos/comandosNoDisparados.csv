@@ -1,0 +1,55 @@
+Contexto,Tipo,Mensaje,Caso de uso que lo escucha
+Suscripción,Comando,ProvisionCommunityCommand,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento
+Suscripción,Comando,RegisterManualPaymentCommand,UC-SUS-04: Registrar Pago Manual
+Suscripción,Comando,GrantGracePeriodCommand,UC-SUS-05: Reactivación Manual / Extensión de Gracia
+Suscripción,Comando,UpdateCommunityProfileCommand,UC-SUS-10: Actualizar Datos Administrativos de Fraccionamiento
+Suscripción,Comando,SuspendSubscriptionCommand,UC-SUS-11: Suspender Suscripción por Morosidad
+Suscripción,Comando,ActivateScheduledCommunityCommand,UC-SUS-12: Activar Comunidad Programada
+Suscripción,Comando,CancelSubscriptionCommand,UC-SUS-14: Cancelar / Dar de Baja Fraccionamiento
+Gestión de Comunidad,Comando,ConfigureCommunityCommand,UC-COM-01: Configurar Reglas de Comunidad
+Gestión de Comunidad,Comando,RegisterHouseModelCommand,UC-COM-02: Registrar Modelo de Propiedad
+Gestión de Comunidad,Comando,RegisterHouseCommand,UC-COM-03: Registrar Unidad Privativa
+Gestión de Comunidad,Comando,AssignPrimaryResidentCommand,UC-COM-04: Asignar Residente Principal
+Gestión de Comunidad,Comando,RegisterSecondaryResidentCommand,UC-COM-05: Registrar Residente Secundario
+Gestión de Comunidad,Comando,RemoveResidentCommand,UC-COM-06: Remover Residente
+Gestión de Comunidad,Comando,ChangeHouseOperationalStatusCommand,UC-COM-07: Modificar Estado Operativo de Unidad Privativa
+Gestión de Comunidad,Comando,GenerateHouseBlockCommand,UC-COM-08: Generar Bloque de Unidades Privativas
+Gestión de Comunidad,Comando,InitializeCommunityCommand,UC-COM-09: Inicializar Entorno de Comunidad
+Gestión de Comunidad,Comando,RevealVisitorIdentityCommand,UC-COM-10: Auditar Identidad de Visitante (Break-Glass Flow)
+Control de Acceso,Comando,GenerateInvitationCommand,UC-ACC-01: Generar Invitación de Acceso
+Control de Acceso,Comando,CancelInvitationCommand,UC-ACC-02: Cancelar Invitación
+Control de Acceso,Comando,RegisterOnlineEntryCommand,UC-ACC-03: Registrar Entrada Online
+Control de Acceso,Comando,SyncDeferredAccessesCommand,UC-ACC-05: Procesar Eventos Diferidos
+Control de Acceso,Comando,RegisterUnscheduledVisitCommand,UC-ACC-06: Registrar Llegada Sorpresa
+Control de Acceso,Comando,TriggerEmergencyOverrideCommand,UC-ACC-07: Ejecutar Apertura de Contingencia
+Control de Acceso,Comando,RegisterDepartureCommand,UC-ACC-08: Registrar Salida de Visitante
+Control de Acceso,Comando,ExpirePendingInvitationsCommand,UC-ACC-09: Invalidar Invitaciones Expiradas
+Control de Acceso,Comando,RegisterOfflineDepartureCommand,UC-ACC-10: Registrar Salida Offline
+Control de Acceso,Comando,ValidateOfflineTokenCommand,UC-ACC-11: Validar Acceso Offline
+Control de Acceso,Comando,ResolveEmergencyOverrideCommand,UC-ACC-12: Justificar Contingencia Pendiente
+Control de Acceso,Comando,SendHeartbeatCommand,UC-ACC-13: Sincronizar Estado Operativo Global
+Control de Acceso,Comando,UpdateInvitationContactCommand,UC-ACC-14: Actualizar Contacto de Invitación
+Control de Acceso,Comando,RequestInvitationResendCommand,UC-ACC-15: Solicitar Reenvío de Invitación
+Control de Acceso,Comando,InitializeAccessEnvironmentCommand,UC-ACC-19: Inicializar Entorno de Caseta
+Control de Acceso,Comando,RegisterManualDepartureCommand,UC-ACC-20: Registrar Salida Manual desde Consola
+Control de Acceso,Comando,SyncHouseSuspensionCommand,UC-ACC-21: Reaccionar a Suspensión de Unidad
+Control de Acceso,Comando,HandleDeliveryFailureCommand,UC-ACC-22: Procesar Fallo de Entrega de Invitación
+Seguridad,Comando,RegisterExternalIdentityCommand,UC-IAM-01: Registrar Identidad Externa
+Seguridad,Comando,ProvisionNewStaffAccountCommand,UC-IAM-02: Provisionar Nueva Cuenta de Personal
+Seguridad,Comando,AssignCommunityToStaffCommand,UC-IAM-03: Asignar Comunidad a Personal Existente
+Seguridad,Comando,RevokeSessionCommand,UC-IAM-04: Revocar Sesión
+Notificaciones,Comando,DispatchAccessAlertCommand,UC-NOT-01: Notificar Acceso a Residente
+Notificaciones,Comando,DispatchCriticalAlertCommand,UC-NOT-02: Despachar Alerta Crítica de Seguridad
+Notificaciones,Comando,DispatchExitAlertCommand,UC-NOT-03: Notificar Salida a Residente
+Notificaciones,Comando,DistributeAccessPassCommand,UC-NOT-04: Distribuir Pase de Acceso a Visitante
+Notificaciones,Comando,DistributeAccessPassCancellationCommand,UC-NOT-05: Notificar Cancelación de Pase de Acceso
+Notificaciones,Comando,DispatchAccessPassResendCommand,UC-NOT-06: Despachar Reenvío de Pase de Acceso
+Notificaciones,Comando,DispatchStatusChangeCommand,UC-NOT-07: Notificar Cambio de Estado de Suscripción
+Suscripción,Consulta,GetCommunitiesQuery,UC-SUS-02: Consultar Directorio de Fraccionamientos
+Suscripción,Consulta,GetCommunityDetailQuery,UC-SUS-03: Consultar Detalle y Estado de Cuenta de Fraccionamiento
+Suscripción,Consulta,GetMyBillingProfileQuery,UC-SUS-09: Consultar Mi Estado de Facturación
+Suscripción,Consulta,GetManualPaymentReferenceQuery,UC-SUS-13: Consultar Referencia de Pago Manual
+Control de Acceso,Consulta,GetValidTokensForTodayQuery,UC-ACC-04: Sincronizar Caché Offline
+Control de Acceso,Consulta,GetActiveInvitationsQuery,UC-ACC-16: Consultar Mis Invitaciones Activas
+Control de Acceso,Consulta,GetInvitationDetailQuery,UC-ACC-17: Consultar Detalle de Invitación
+Control de Acceso,Consulta,GetInvitationHistoryQuery,UC-ACC-18: Consultar Historial de Invitaciones

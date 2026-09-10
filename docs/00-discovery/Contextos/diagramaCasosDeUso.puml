@@ -1,0 +1,85 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam usecase {
+  BackgroundColor LightBlue
+  BorderColor DarkBlue
+}
+
+' Definición de Actores
+actor "Community Admin" as CA
+actor "Primary Resident" as PR
+actor "Secondary Resident" as SR
+actor "Security Guard" as SG
+actor "Kiosk App\n(Hardware)" as Kiosk
+actor "System\n(Cron/Bg Job)" as Sys
+
+package "AxolPass (Monolito Modular)" {
+
+    package "Community Context" {
+        usecase "UC-COM-01: Configurar Reglas" as COM01
+        usecase "UC-COM-02: Registrar Modelo" as COM02
+        usecase "UC-COM-03: Registrar Unidad Privativa" as COM03
+        usecase "UC-COM-04: Asignar Residente Principal" as COM04
+        usecase "UC-COM-05: Registrar Residente Secundario" as COM05
+        usecase "UC-COM-06: Remover Residente" as COM06
+        usecase "UC-COM-07: Modificar Estado Operativo" as COM07
+        usecase "UC-COM-08: Generar Bloque de Unidades Privativas" as COM08
+    }
+
+    package "Access Context" {
+        usecase "UC-ACC-01: Generar Invitación" as ACC01
+        usecase "UC-ACC-02: Cancelar Invitación" as ACC02
+        usecase "UC-ACC-03: Validar Token Online" as ACC03
+        usecase "UC-ACC-04: Sincronizar Caché Offline" as ACC04
+        usecase "UC-ACC-05: Procesar Eventos Diferidos" as ACC05
+        usecase "UC-ACC-06: Registrar Llegada Sorpresa" as ACC06
+        usecase "UC-ACC-07: Ejecutar Apertura Contingencia" as ACC07
+        usecase "UC-ACC-08: Registrar Salida Visitante" as ACC08
+        usecase "UC-ACC-09: Invalidar Expiradas" as ACC09
+        usecase "UC-ACC-10: Registrar Salida Offline" as ACC10
+        usecase "UC-ACC-11: Validar Acceso Offline" as ACC11
+        usecase "UC-ACC-12: Justificar Contingencia" as ACC12
+        usecase "UC-ACC-13: Sync Estado Global (Heartbeat)" as ACC13
+    }
+}
+
+' --- Relaciones del Community Context ---
+CA --> COM01
+CA --> COM02
+CA --> COM03
+CA --> COM04
+CA --> COM05
+CA --> COM06
+CA --> COM07
+CA --> COM08
+
+PR --> COM05
+PR --> COM06
+
+' --- Relaciones del Access Context ---
+' Residentes
+PR --> ACC01
+PR --> ACC02
+SR --> ACC01
+SR --> ACC02
+
+' Guardia
+SG --> ACC06
+SG --> ACC07
+SG --> ACC08 : "(Manual)"
+SG --> ACC12
+
+' Kiosk (Hardware Autónomo)
+Kiosk --> ACC03
+Kiosk --> ACC04
+Kiosk --> ACC05
+Kiosk --> ACC08 : "(Automático)"
+Kiosk --> ACC10
+Kiosk --> ACC11
+Kiosk --> ACC13
+
+' Procesos de Sistema
+Sys --> ACC09
+
+@enduml

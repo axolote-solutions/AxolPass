@@ -1,0 +1,12 @@
+﻿Mensaje,Tipo,Caso de uso Receptor,Caso de uso Emisor
+ProvisionCommunityCommand,Command,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento,PENDIENTE
+GetCommunitiesQuery,Query,UC-SUS-02: Consultar Directorio de Fraccionamientos,PENDIENTE
+GetCommunityDetailQuery,Query,UC-SUS-03: Consultar Detalle y Estado de Cuenta de Fraccionamiento,PENDIENTE
+RegisterManualPaymentCommand,Command,UC-SUS-04: Registrar Pago Manual,PENDIENTE
+GrantGracePeriodCommand,Command,UC-SUS-05: Reactivación Manual / Extensión de Gracia,PENDIENTE
+GetMyBillingProfileQuery,Query,UC-SUS-09: Consultar Mi Estado de Facturación,PENDIENTE
+UpdateCommunityProfileCommand,Command,UC-SUS-10: Actualizar Datos Administrativos de Fraccionamiento,PENDIENTE
+SuspendSubscriptionCommand,Command,UC-SUS-11: Suspender Suscripción por Morosidad,PENDIENTE
+ActivateScheduledCommunityCommand,Command,UC-SUS-12: Activar Comunidad Programada,PENDIENTE
+GetManualPaymentReferenceQuery,Query,UC-SUS-13: Consultar Referencia de Pago Manual,PENDIENTE
+CancelSubscriptionCommand,Command,UC-SUS-14: Cancelar / Dar de Baja Fraccionamiento,PENDIENTE

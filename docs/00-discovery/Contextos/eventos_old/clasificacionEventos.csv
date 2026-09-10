@@ -1,0 +1,49 @@
+Evento,Caso de uso emisor,Triage,Consumidor
+CommunityProvisionedEvent,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento,Coreografía,Consumido por Comunidad
+CommunityAdminAssignedEvent,UC-SUS-01: Aprovisionar Nuevo Fraccionamiento,Coreografía,Consumido por IAM
+SubscriptionPeriodExtendedEvent,UC-SUS-04: Registrar Pago Manual,Bug,Debería ser consumido por Accesos
+SubscriptionReactivatedEvent,UC-SUS-04 / UC-SUS-05,Coreografía,Consumido por Accesos
+GracePeriodGrantedEvent,UC-SUS-05: Reactivación Manual / Extensión de Gracia,Auditoría,Base de datos de auditoría (AuditLog)
+CommunityProfileUpdatedEvent,UC-SUS-10: Actualizar Datos Administrativos de Fraccionamiento,Coreografía,Consumido por Comunidad
+SubscriptionSuspendedEvent,UC-SUS-11: Suspender Suscripción por Morosidad,Coreografía,Consumido por Accesos y Comunidad
+CommunityOperationsStartedEvent,UC-SUS-12: Activar Comunidad Programada,Coreografía,Consumido por Accesos y Comunidad
+SubscriptionCanceledEvent,UC-SUS-14: Cancelar / Dar de Baja Fraccionamiento,Coreografía,Consumido por Accesos, Comunidad e IAM
+CommunitySettingsUpdatedEvent,UC-COM-01: Configurar Reglas de Comunidad,Coreografía,Consumido por Accesos
+HouseModelRegisteredEvent,UC-COM-02: Registrar Modelo de Propiedad,Bug,Debería definirse un consumidor (Flujo incompleto)
+HouseRegisteredEvent,UC-COM-03 / UC-COM-08,Auditoría,Base de datos de auditoría (AuditLog)
+PrimaryResidentAssignedEvent,UC-COM-04: Asignar Residente Principal,Analítica / Bug,Data Lake o Pendiente de definir consumidor
+SecondaryResidentRegisteredEvent,UC-COM-05: Registrar Residente Secundario,Bug,Debería ser consumido por Notificaciones
+ResidentRemovedEvent,UC-COM-06: Remover Residente,Coreografía,Consumido por Accesos e IAM
+HouseOperationalStatusChangedEvent,UC-COM-07: Modificar Estado Operativo de Unidad Privativa,Coreografía,Consumido por Accesos
+HouseSuspendedNotificationEvent,UC-COM-07: Modificar Estado Operativo de Unidad Privativa,Frontend,App Móvil o Web
+PrivacyOverrideAuditedEvent,UC-COM-10: Auditar Identidad de Visitante,Auditoría,Base de datos de auditoría (AuditLog)
+InvitationGeneratedEvent,UC-ACC-01: Generar Invitación de Acceso,Coreografía,Consumido por Notificaciones
+InvitationCanceledEvent,UC-ACC-02: Cancelar Invitación,Coreografía,Consumido por Notificaciones
+AccessGrantedEvent,UC-ACC-03: Registrar Entrada Online,Coreografía,Consumido por Notificaciones
+AccessDeniedEvent,UC-ACC-03: Registrar Entrada Online,Auditoría / Analítica,AuditLog y Reportes
+DeferredAccessesProcessedEvent,UC-ACC-05: Procesar Eventos Diferidos,Coreografía,Consumido por Comunidad
+OfflineOverrideAlertEvent,UC-ACC-05: Procesar Eventos Diferidos,Frontend / Coreografía,Consumido por Notificaciones y App Móvil
+ManualAccessGrantedEvent,UC-ACC-06 / UC-ACC-20,Hardware IoT,Controlador físico de caseta (Pluma)
+UnscheduledVisitAlertEvent,UC-ACC-06: Registrar Llegada Sorpresa,Coreografía,Consumido por Notificaciones
+ParkingSpaceReservedEvent,UC-ACC-06: Registrar Llegada Sorpresa,Coreografía,Consumido por Comunidad
+EmergencyOverrideTriggeredEvent,UC-ACC-07: Ejecutar Apertura de Contingencia,Coreografía / Auditoría,Consumido por Notificaciones y AuditLog
+DepartureRegisteredEvent,UC-ACC-08 / UC-ACC-20,Coreografía,Consumido por Notificaciones
+ParkingSpaceReleasedEvent,UC-ACC-08 / UC-ACC-20,Coreografía,Consumido por Comunidad
+InvitationExpiredEvent,UC-ACC-09: Invalidar Invitaciones Expiradas,Analítica,Reportes y Data Lake
+OfflineDepartureRegisteredEvent,UC-ACC-10: Registrar Salida Offline,Hardware IoT,Controlador físico de caseta (Pluma)
+OfflineAccessGrantedEvent,UC-ACC-11: Validar Acceso Offline,Hardware IoT,Controlador físico de caseta (Pluma)
+EmergencyOverrideResolvedEvent,UC-ACC-12: Justificar Contingencia Pendiente,Auditoría,Base de datos de auditoría (AuditLog)
+HardwareHeartbeatReceivedEvent,UC-ACC-13: Sincronizar Estado Operativo Global,Frontend / Analítica,Dashboard Web y Monitor de Salud
+InvitationContactUpdatedEvent,UC-ACC-14: Actualizar Contacto de Invitación,Coreografía,Consumido por Notificaciones
+InvitationResendRequestedEvent,UC-ACC-15: Solicitar Reenvío de Invitación,Coreografía,Consumido por Notificaciones
+UserIdentityRegisteredEvent,UC-IAM-01: Registrar Identidad Externa,Coreografía,Consumido por Comunidad
+NewStaffProvisionedEvent,UC-IAM-02: Provisionar Nueva Cuenta de Personal,Coreografía,Consumido por Notificaciones
+ExistingStaffAssignedEvent,UC-IAM-03: Asignar Comunidad a Personal Existente,Coreografía,Consumido por Notificaciones
+SessionRevokedEvent,UC-IAM-04: Revocar Sesión,Auditoría,Base de datos de auditoría (AuditLog)
+ResidentNotificationDispatchedEvent,UC-NOT-01: Notificar Acceso a Residente,Auditoría / Analítica,AuditLog y Reportes de uso
+CriticalAlertDispatchedEvent,UC-NOT-02: Escalar Alerta de Pánico,Auditoría,Base de datos de auditoría (AuditLog)
+AccessPassDispatchedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante,Auditoría,Base de datos de auditoría (AuditLog)
+AccessPassDeliveryFailedEvent,UC-NOT-04: Distribuir Pase de Acceso a Visitante,Coreografía,Consumido por Accesos
+CancellationNoticeDispatchedEvent,UC-NOT-05: Notificar Cancelación de Pase,Auditoría,Base de datos de auditoría (AuditLog)
+AccessPassResendDispatchedEvent,UC-NOT-06: Procesar Reenvío Manual de Pase,Auditoría,Base de datos de auditoría (AuditLog)
+AdminAlertDispatchedEvent,UC-NOT-07: Despachar Alerta Administrativa,Auditoría,Base de datos de auditoría (AuditLog)

@@ -1,0 +1,61 @@
+Nombre_Evento,Caso_De_Uso_Emisor,Contexto_Emisor
+CommunityProvisionedEvent,UC-SUS-01,Suscripción
+CommunityAdminAssignedEvent,UC-SUS-01,Suscripción
+SubscriptionPeriodExtendedEvent,UC-SUS-04,Suscripción
+SubscriptionReactivatedEvent,UC-SUS-04,Suscripción
+GracePeriodGrantedEvent,UC-SUS-05,Suscripción
+SubscriptionReactivatedEvent,UC-SUS-05,Suscripción
+CommunityProfileUpdatedEvent,UC-SUS-10,Suscripción
+SubscriptionSuspendedEvent,UC-SUS-11,Suscripción
+CommunityOperationsStartedEvent,UC-SUS-12,Suscripción
+SubscriptionCanceledEvent,UC-SUS-14,Suscripción
+PushNotificationDispatchedEvent,UC-NOT-01,Notificaciones
+PushNotificationFailedEvent,UC-NOT-01,Notificaciones
+CriticalAlertDispatchedEvent,UC-NOT-02,Notificaciones
+ExitPushDispatchedEvent,UC-NOT-03,Notificaciones
+AccessPassDispatchedEvent,UC-NOT-04,Notificaciones
+AccessPassDeliveryFailedEvent,UC-NOT-04,Notificaciones
+CancellationPassDispatchedEvent,UC-NOT-05,Notificaciones
+AccessPassResendDispatchedEvent,UC-NOT-06,Notificaciones
+AccessPassResendFailedEvent,UC-NOT-06,Notificaciones
+AdminAlertDispatchedEvent,UC-NOT-07,Notificaciones
+AdminAlertFailedEvent,UC-NOT-07,Notificaciones
+UserIdentityRegisteredEvent,UC-IAM-01,Seguridad
+NewStaffProvisionedEvent,UC-IAM-02,Seguridad
+ExistingStaffAssignedEvent,UC-IAM-03,Seguridad
+SessionRevokedEvent,UC-IAM-04,Seguridad
+CommunitySettingsUpdatedEvent,UC-COM-01,Comunidad
+HouseModelRegisteredEvent,UC-COM-02,Comunidad
+HouseRegisteredEvent,UC-COM-03,Comunidad
+HouseRegisteredEvent,UC-COM-08,Comunidad
+PrimaryResidentAssignedEvent,UC-COM-04,Comunidad
+SecondaryResidentRegisteredEvent,UC-COM-05,Comunidad
+ResidentRemovedEvent,UC-COM-06,Comunidad
+HouseOperationalStatusChangedEvent,UC-COM-07,Comunidad
+HouseSuspendedNotificationEvent,UC-COM-07,Comunidad
+PrivacyOverrideAuditedEvent,UC-COM-10,Comunidad
+InvitationGeneratedEvent,UC-ACC-01,Control de Accesos
+InvitationCanceledEvent,UC-ACC-02,Control de Accesos
+InvitationContactUpdatedEvent,UC-ACC-14,Control de Accesos
+InvitationResendRequestedEvent,UC-ACC-15,Control de Accesos
+AccessGrantedEvent,UC-ACC-03,Control de Accesos
+AccessDeniedEvent,UC-ACC-03,Control de Accesos
+DeferredAccessesProcessedEvent,UC-ACC-05,Control de Accesos
+AccessGrantedEvent,UC-ACC-05,Control de Accesos
+DepartureRegisteredEvent,UC-ACC-05,Control de Accesos
+OfflineOverrideAlertEvent,UC-ACC-05,Control de Accesos
+ManualAccessGrantedEvent,UC-ACC-06,Control de Accesos
+UnscheduledVisitAlertEvent,UC-ACC-06,Control de Accesos
+ParkingSpaceReservedEvent,UC-ACC-06,Control de Accesos
+EmergencyOverrideTriggeredEvent,UC-ACC-07,Control de Accesos
+DepartureRegisteredEvent,UC-ACC-20,Control de Accesos
+ParkingSpaceReleasedEvent,UC-ACC-20,Control de Accesos
+ManualAccessGrantedEvent,UC-ACC-20,Control de Accesos
+EmergencyOverrideResolvedEvent,UC-ACC-12,Control de Accesos
+DepartureRegisteredEvent,UC-ACC-08,Control de Accesos
+ParkingSpaceReleasedEvent,UC-ACC-08,Control de Accesos
+InvitationExpiredEvent,UC-ACC-09,Control de Accesos
+OfflineDepartureRegisteredEvent,UC-ACC-10,Control de Accesos
+OfflineAccessGrantedEvent,UC-ACC-11,Control de Accesos
+HardwareHeartbeatReceivedEvent,UC-ACC-13,Control de Accesos
+InvitationStatusUpdatedEvent,UC-ACC-22,Control de Accesos

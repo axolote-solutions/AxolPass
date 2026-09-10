@@ -1,0 +1,27 @@
+﻿Evento,Caso de uso Emisor
+InvitationGeneratedEvent,UC-ACC-01: Generar Invitación de Acceso
+InvitationCanceledEvent,UC-ACC-02: Cancelar Invitación
+InvitationContactUpdatedEvent,UC-ACC-14: Actualizar Contacto de Invitación
+InvitationResendRequestedEvent,UC-ACC-15: Solicitar Reenvío de Invitación
+AccessGrantedEvent,UC-ACC-03: Registrar Entrada Online
+AccessDeniedEvent,UC-ACC-03: Registrar Entrada Online
+DeferredAccessesProcessedEvent,UC-ACC-05: Procesar Eventos Diferidos
+AccessGrantedEvent,UC-ACC-05: Procesar Eventos Diferidos
+DepartureRegisteredEvent,UC-ACC-05: Procesar Eventos Diferidos
+OfflineOverrideAlertEvent,UC-ACC-05: Procesar Eventos Diferidos
+ManualAccessGrantedEvent,UC-ACC-06: Registrar Llegada Sorpresa
+UnscheduledVisitAlertEvent,UC-ACC-06: Registrar Llegada Sorpresa
+ParkingSpaceReservedEvent,UC-ACC-06: Registrar Llegada Sorpresa
+EmergencyOverrideTriggeredEvent,UC-ACC-07: Ejecutar Apertura de Contingencia
+DepartureRegisteredEvent,UC-ACC-20: Registrar Salida Manual desde Consola
+ParkingSpaceReleasedEvent,UC-ACC-20: Registrar Salida Manual desde Consola
+ManualAccessGrantedEvent,UC-ACC-20: Registrar Salida Manual desde Consola
+EmergencyOverrideResolvedEvent,UC-ACC-12: Justificar Contingencia Pendiente
+DepartureRegisteredEvent,UC-ACC-08: Registrar Salida de Visitante
+ParkingSpaceReleasedEvent,UC-ACC-08: Registrar Salida de Visitante
+InvitationExpiredEvent,UC-ACC-09: Invalidar Invitaciones Expiradas
+ParkingSpaceReleasedEvent,UC-ACC-09: Invalidar Invitaciones Expiradas
+OfflineDepartureRegisteredEvent,UC-ACC-10: Registrar Salida Offline
+OfflineAccessGrantedEvent,UC-ACC-11: Validar Acceso Offline
+HardwareHeartbeatReceivedEvent,UC-ACC-13: Sincronizar Estado Operativo Global
+InvitationStatusUpdatedEvent,UC-ACC-22: Procesar Fallo de Entrega de Invitación
